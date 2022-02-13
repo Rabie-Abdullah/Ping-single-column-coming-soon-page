@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+*  {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 30px;
+}
+h1, p, form {
+    margin-bottom: 20px;
+}
+h2, footer {
+    color: var(--gray);
+    font-weight: 600;
+}
+p, input {
+    color: var(--very-dark-blue);
+}
+span {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+form input {
+    padding: 9px 85px 7px 15px;
+    border-radius: 50px;
+    border: 1px solid var(--gray);
+}
+
+button {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+li  {
+    margin-right: 10px;
+    display: inline;
+}
+a .fab {
+    color: var(--blue);
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    padding: 4px;
+}
+a .fab:hover {
+    color: #a64ebf;
+    border: 1px solid #a64ebf;
+}
+#text_error {
+    display: block;
+    color: red;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 80%;
+    }
+   form {
+       flex-direction: column;
+       gap: 8px;
+   }
+   button {
+    padding: 10px 95px 10px 95px;
+   }
+}
